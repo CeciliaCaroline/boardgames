@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Everdell",
+    "publisher": "Starling Games",
+    "language": "ITA",
+    "bbg_rating": "8.0",
+    "expansion": false,
+    "min_players": 1,
+    "max_players": 4,
+    "min_time": 40,
+    "max_time": 80,
+    "acquired": "1999-11-19 08:26:49.219717"
+  },
+  {
+    "name": "Everdell Belfaire",
+    "publisher": "Starling Games",
+    "language": "ITA",
+    "bbg_rating": "8.0",
+    "expansion": true,
+    "min_players": 1,
+    "max_players": 6,
+    "min_time": 40,
+    "max_time": 120,
+    "acquired": "1999-11-19 08:26:49.219717"
+  },
+  {
+    "name": "Carcassonne",
+    "publisher": "Hans im Gluck",
+    "language": "ENG",
+    "bbg_rating": "7.4",
+    "expansion": false,
+    "min_players": 2,
+    "max_players": 5,
+    "min_time": 30,
+    "max_time": 45,
+    "acquired": "1999-11-19 08:26:49.219717"
+  },
+  {
+    "name": "Root",
+    "publisher": "Leder Games",
+    "language": "ITA",
+    "bbg_rating": "8.1",
+    "expansion": false,
+    "min_players": 2,
+    "max_players": 4,
+    "min_time": 60,
+    "max_time": 90,
+    "acquired": "1999-11-19 08:26:49.219717"
+  },
+  {
+    "name": "Root: Riverfolk",
+    "publisher": "Leder Games",
+    "language": "ENG",
+    "bbg_rating": "8.4",
+    "expansion": true,
+    "min_players": 2,
+    "max_players": 4,
+    "min_time": 60,
+    "max_time": 90,
+    "acquired": "1999-11-19 08:26:49.219717"
+  },
+  {
+    "name": "Everdell Duo",
+    "publisher": "Starling Games",
+    "language": "ENG",
+    "bbg_rating": "-",
+    "expansion": false,
+    "min_players": 1,
+    "max_players": 2,
+    "min_time": 30,
+    "max_time": 30,
+    "acquired": "1999-11-19 08:26:49.219717"
+  },
+  {
+    "name": "Fiasco",
+    "publisher": "Bully Pulpit Games",
+    "language": "DEU",
+    "bbg_rating": "8.2",
+    "expansion": false,
+    "min_players": 2,
+    "max_players": 6,
+    "min_time": 60,
+    "max_time": 60,
+    "acquired": "1999-11-19 08:26:49.219717"
+  },
+  {
+    "name": "Fuorisalone",
+    "publisher": "Cranio Creation",
+    "language": "ITA",
+    "bbg_rating": "6.3",
+    "expansion": false,
+    "min_players": 2,
+    "max_players": 4,
+    "min_time": 50,
+    "max_time": 90,
+    "acquired": "1999-11-19 08:26:49.219717"
+  }
+]

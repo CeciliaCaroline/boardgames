@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import LayoutContainer from './components/Layout/LayoutContainer';
+import { DataProvider } from './context/DataContext';
+import { ConfigProvider } from 'antd';
+
 
 function App() {
+  const customTheme = {
+    components: {
+      Tabs: {
+        inkBarColor: "#61DAD6",
+        itemActiveColor: "#61DAD6",
+        itemSelectedColor: "#61DAD6"
+      },
+      Menu: {
+        itemBorderRadius: 0,
+
+      },
+      Button: {
+        defaultHoverBg: "#61DAD6"
+      }
+    }
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ConfigProvider theme={customTheme}>
+      <DataProvider>
+        <LayoutContainer />
+      </DataProvider>
+    </ConfigProvider>
+
+
+
   );
 }
 
