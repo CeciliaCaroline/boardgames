@@ -24,7 +24,7 @@ This project is a React application built using the AntDesign component framewor
 - **AntDesign**: UI components are created using the AntDesign framework.
 - **React Context API**: Used for state management to provide data across components.
 - **Tailwind CSS**: Used for styling and layout purposes.
-- **Best Practices**: Code is organized, clean, and follows React best practices.
+
 
 ## Setup Instructions
 
