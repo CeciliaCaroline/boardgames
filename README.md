@@ -1,6 +1,4 @@
-Here’s a README file template tailored for your React application assignment using AntDesign and Tailwind CSS:
 
----
 
 # React Application with AntDesign and Tailwind CSS
 
