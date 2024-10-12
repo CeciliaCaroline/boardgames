@@ -10,8 +10,8 @@ import {
 } from '@ant-design/icons';
 const { Sider } = Layout;
 
-const Component1 = () => <div>Coming Soon....</div>;
-const Component3 = () => <div>Coming Soon....</div>;
+const Component1 = () => <div className='h-screen'>Coming Soon....</div>;
+const Component3 = () => <div className='h-screen'>Coming Soon....</div>;
 
 
 const tabItems = [
