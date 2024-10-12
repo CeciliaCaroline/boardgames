@@ -107,7 +107,7 @@ const CustomTable = () => {
       title: () => <p>
         BGG Rating {" "}
         <Tooltip
-          className='max-w-full'
+          overlayClassName='max-w-max '
           placement='top'
           title="These ratings refer to user ratings available on the website boardgamegeek.com">
           <QuestionCircleOutlined />
