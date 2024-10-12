@@ -15,6 +15,7 @@ This project is a React application built using the AntDesign component framewor
 - **Mock API Service**: Simulates server interaction to fetch JSON data.
 - **Edit Functionality**: Allows editing of table rows with changes logged to the console.
 - **Sorting and Filtering**: Built-in sorting and filtering capabilities for table columns.
+- **Testing**: I had some trouble getting jest to work with the Ant Design components and so I did not write any tests
 
 ## Technical Requirements
 
