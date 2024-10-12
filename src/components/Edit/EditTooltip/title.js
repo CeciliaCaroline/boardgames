@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Divider } from 'antd';
+import { Divider, Button } from 'antd';
 import {
   DeleteFilled,
   EditFilled
@@ -15,10 +15,10 @@ const EditTooltipTitle = ({ handleSetModalOpen }) => {
       <Divider className='m-2.5' />
       <p className='text-black'> <DeleteFilled className='text-red' /> {" "}Delete</p>
       <Divider className='m-2.5' />
-      <p className='text-black' onClick={() => handleSetModalOpen(true)}>
+      <Button type='text' className='text-black p-0' onClick={() => handleSetModalOpen(true)}>
         <EditFilled className='text-green' />{" "}
         Edit
-      </p>
+      </Button>
     </div>
 
 
