@@ -13,32 +13,32 @@ import EditAction from '../../Edit/EditAction';
 
 
 const CustomTable = () => {
-  const [searchText, setSearchText] = useState('');
+  const [FilterText, setFilterText] = useState('');
   const { data, loading } = useContext(DataContext);
-  const searchInput = useRef(null);
+  const FilterInput = useRef(null);
 
-  const handleSearch = (selectedKeys, confirm) => {
+  const handleFilter = (selectedKeys, confirm) => {
     confirm();
-    setSearchText(selectedKeys[0]);
+    setFilterText(selectedKeys[0]);
   };
   const handleReset = (clearFilters) => {
     clearFilters();
-    setSearchText('');
+    setFilterText('');
   };
 
-  // search properties for each column
-  const getColumnSearchProps = (dataIndex) => ({
+  // Filter/filter properties for each column
+  const getColumnFilterProps = (dataIndex) => ({
     filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters, close }) => (
       <div
         className='p-2'
         onKeyDown={(e) => e.stopPropagation()}
       >
         <Input
-          ref={searchInput}
-          placeholder={`Search ${dataIndex}`}
+          ref={FilterInput}
+          placeholder={`Filter ${dataIndex}`}
           value={selectedKeys[0]}
           onChange={(e) => setSelectedKeys(e.target.value ? [e.target.value] : [])}
-          onPressEnter={() => handleSearch(selectedKeys, confirm, dataIndex)}
+          onPressEnter={() => handleFilter(selectedKeys, confirm, dataIndex)}
           className='mb-2 block'
         />
         <Space>
@@ -56,7 +56,7 @@ const CustomTable = () => {
               confirm({
                 closeDropdown: false,
               });
-              setSearchText(selectedKeys[0]);
+              setFilterText(selectedKeys[0]);
               close();
             }}
           >
@@ -67,7 +67,7 @@ const CustomTable = () => {
       </div>
     ),
 
-    // filter records based on search input
+    // filter records based on Filter input
     onFilter: (value, record) =>
       record[dataIndex].toString().toLowerCase().includes(value.toLowerCase()),
 
@@ -82,7 +82,7 @@ const CustomTable = () => {
       render: (text) => <p>{text} </p>,
       sorter: (a, b) => a.name.length - b.name.length,
       defaultSortOrder: 'descend',
-      ...getColumnSearchProps('name'),
+      ...getColumnFilterProps('name'),
     },
     {
       title: 'Publisher',
@@ -120,7 +120,6 @@ const CustomTable = () => {
         target: 'sorter-icon',
       },
       sorter: (a, b) => {
-        console.log(a, b, "Sorter")
         return parseFloat(a['bbg_rating']) - parseFloat(b['bbg_rating'])
       },
 

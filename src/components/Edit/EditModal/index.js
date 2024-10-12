@@ -11,7 +11,7 @@ const EditModal = ({ data }) => {
 
   const handleOk = async () => {
     try {
-      await form.validateFields();
+      await form.validateFields(); // validate form fields before submit
       form.submit();
       setModalOpen(false);
     } catch (e) { console.log(e, "error") }

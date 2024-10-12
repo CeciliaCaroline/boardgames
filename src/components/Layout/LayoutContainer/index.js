@@ -14,7 +14,7 @@ const Component1 = () => <div>Coming Soon....</div>;
 const Component3 = () => <div>Coming Soon....</div>;
 
 
-const items = [
+const tabItems = [
 
   {
     key: '1',
@@ -59,7 +59,7 @@ const LayoutContainer = () => {
       <NavBar />
       <Layout>
         <Sider width="208px" className='bg-white sidebar-shadow'>
-          <Menu items={items} defaultSelectedKeys={[selectedComponent]} onClick={handleMenuClick} />
+          <Menu tabItems={tabItems} defaultSelectedKeys={[selectedComponent]} onClick={handleMenuClick} />
         </Sider>
         {renderContent()}
       </Layout>
