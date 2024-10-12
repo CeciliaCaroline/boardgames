@@ -59,7 +59,7 @@ const LayoutContainer = () => {
       <NavBar />
       <Layout>
         <Sider width="208px" className='bg-white sidebar-shadow'>
-          <Menu tabItems={tabItems} defaultSelectedKeys={[selectedComponent]} onClick={handleMenuClick} />
+          <Menu items={tabItems} defaultSelectedKeys={[selectedComponent]} onClick={handleMenuClick} />
         </Sider>
         {renderContent()}
       </Layout>
