@@ -1,6 +1,4 @@
-Here’s a README file template tailored for your React application assignment using AntDesign and Tailwind CSS:
 
----
 
 # React Application with AntDesign and Tailwind CSS
 
@@ -17,6 +15,7 @@ This project is a React application built using the AntDesign component framewor
 - **Mock API Service**: Simulates server interaction to fetch JSON data.
 - **Edit Functionality**: Allows editing of table rows with changes logged to the console.
 - **Sorting and Filtering**: Built-in sorting and filtering capabilities for table columns.
+- **Testing**: I had some trouble getting jest to work with the Ant Design components and so I did not write any tests
 
 ## Technical Requirements
 
@@ -24,7 +23,7 @@ This project is a React application built using the AntDesign component framewor
 - **AntDesign**: UI components are created using the AntDesign framework.
 - **React Context API**: Used for state management to provide data across components.
 - **Tailwind CSS**: Used for styling and layout purposes.
-- **Best Practices**: Code is organized, clean, and follows React best practices.
+
 
 ## Setup Instructions
 
