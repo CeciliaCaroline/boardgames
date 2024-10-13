@@ -73,6 +73,15 @@ const CustomTable = () => {
 
   });
 
+// Replace any missing 'bbg_rating' values ('-') with 0 for consistent data formatting
+const newData = data.map((d) => {
+    if (d['bbg_rating'] === '-') {
+      d['bbg_rating'] = 0
+    }
+    return d
+
+  })
+
   // define table columns
   const columns = [
     {
@@ -115,7 +124,7 @@ const CustomTable = () => {
       </p>,
       dataIndex: 'bbg_rating',
       key: 'bbg_rating',
-      render: (text) => <p>{text}</p>,
+      render: (text) => <p>{text|| "-"}</p>,
       showSorterTooltip: {
         target: 'sorter-icon',
       },
@@ -160,7 +169,7 @@ const CustomTable = () => {
     <>
       {loading ? <Spin size='large' className='text-green' /> : <Table
         columns={columns}
-        dataSource={data}
+        dataSource={newData || data}
         scroll={true}
         className='m-3'
         title={() => <p className='text-left text-green text-18'>My Collection <PlusCircleFilled className='text-green text-20' /></p>}
