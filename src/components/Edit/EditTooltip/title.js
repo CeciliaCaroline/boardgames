@@ -7,7 +7,7 @@ import {
 } from '@ant-design/icons';
 
 
-const EditTooltipContent = ({ handleSetModalOpen }) => {
+const EditTooltipTitle = ({ handleSetModalOpen }) => {
 
   return (
     <div>
@@ -24,5 +24,5 @@ const EditTooltipContent = ({ handleSetModalOpen }) => {
 
   );
 };
-export default EditTooltipContent
+export default EditTooltipTitle
   ;
