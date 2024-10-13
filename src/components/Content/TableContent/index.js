@@ -74,13 +74,10 @@ const CustomTable = () => {
   });
 
 // Replace any missing 'bbg_rating' values ('-') with 0 for consistent data formatting
-const newData = data.map((d) => {
-    if (d['bbg_rating'] === '-') {
-      d['bbg_rating'] = 0
-    }
-    return d
-
-  })
+const newData = data.map((d) => ({
+  ...d,
+  bbg_rating: isNaN(Number(d.bbg_rating)) ? 0 : Number(d.bbg_rating), // Ensure the rating is a valid number or set to 0
+}));
 
   // define table columns
   const columns = [
