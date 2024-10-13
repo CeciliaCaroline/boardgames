@@ -15,7 +15,12 @@ This project is a React application built using the AntDesign component framewor
 - **Mock API Service**: Simulates server interaction to fetch JSON data.
 - **Edit Functionality**: Allows editing of table rows with changes logged to the console.
 - **Sorting and Filtering**: Built-in sorting and filtering capabilities for table columns.
-- **Testing**: I had some trouble getting jest to work with the Ant Design components and so I did not write any tests
+- **Testing**: I had some trouble getting Jest to work with the Ant Design components so I did not write any tests
+
+### Data Sorting
+While sorting data in the bbg_rating column, it was observed that some ratings were missing and represented by a '-' value. This caused issues with the table's sorting functionality, as the '-' values disrupted the expected numerical order.
+
+To address this, a custom data transformation was implemented. Any missing bbg_rating values represented by '-' are now replaced with 0, ensuring proper sorting and avoiding NaN errors during comparison. This allows the table to sort all entries consistently, even when some ratings are unavailable. See the implementation in this pull request[https://github.com/CeciliaCaroline/boardgames/pull/1]
 
 ## Technical Requirements
 
