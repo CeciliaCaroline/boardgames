@@ -6,7 +6,7 @@ import {
   MoreOutlined,
 
 } from '@ant-design/icons';
-import EditTooltipTitle from './title';
+import EditTooltipContent from './content';
 
 
 const EditTooltip = () => {
@@ -17,7 +17,7 @@ const EditTooltip = () => {
       <Tooltip
         color='white'
         overlayInnerStyle={{ padding: '25px', width: '136px' }}
-        title={<EditTooltipTitle handleSetModalOpen={setModalOpen} />}
+        title={<EditTooltipContent handleSetModalOpen={setModalOpen} />}
         placement='leftTop'
       >
         <Button
